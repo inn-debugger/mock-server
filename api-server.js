@@ -1,6 +1,6 @@
 const express = require('express')
 const app = new express()
-const port = 3001
+const port = require('./mock/config').port
 const mock = require('./mock/mock-server')
 
 mock(app)
